@@ -14,6 +14,7 @@ const Navigation = () => {
 
   return (
     <nav className={navStyles.navigation}>
+        {openNav ? <style jsx global>{`body {overflow: hidden;}`}</style> : '' }
       {/* Mobile navigation */}
       <div className={navStyles.mobileNav}>
         <div className={navStyles.navbarPhone}>
@@ -102,30 +103,6 @@ const Navigation = () => {
             <FaInstagram className={navStyles.navbarOverlaySocialsIcon} />
           </div>
           <hr className={navStyles.navbarLine}></hr>
-          <div className={navStyles.navbarOverlayContact}>
-            <div className={navStyles.navbarOverlayContactItem}>
-              <MdLocationPin
-                className={navStyles.navbarOverlayContactItemIcon}
-              />
-              <p className={navStyles.navbarOverlayContactItemText}>
-                Silk St, Barbican, London EC2Y 8DS, UK
-              </p>
-            </div>
-            <div className={navStyles.navbarOverlayContactItem}>
-              <MdLocalPhone
-                className={navStyles.navbarOverlayContactItemIcon}
-              />
-              <p className={navStyles.navbarOverlayContactItemText}>
-                +1-212-555-6767
-              </p>
-            </div>
-            <div className={navStyles.navbarOverlayContactItem}>
-              <MdEmail className={navStyles.navbarOverlayContactItemIcon} />
-              <p className={navStyles.navbarOverlayContactItemText}>
-                booking@patiotime.com
-              </p>
-            </div>
-          </div>
         </div>
       </div>
       {/* End mobile navigation */}

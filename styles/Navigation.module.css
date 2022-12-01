@@ -1,6 +1,6 @@
 .navigation {
     width: 100%;
-    position: sticky;
+    position: absolute;
     background-color: transparent;
     z-index: 99999;
 }
@@ -67,6 +67,7 @@
     transition:  .4s;
     visibility: hidden;
     opacity: 0;
+    overflow: hidden;
 }
 
 .showNav {

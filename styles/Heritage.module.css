@@ -1,0 +1,59 @@
+.heritageSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #0e0d0a;
+    color: white;
+    padding: 80px 20px 0 20px;
+}
+
+.heritageFirst {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.heritageFirstSubHeader {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 14px;
+    color: #c8935f;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.heritageFirstHeader {
+    font-family: 'Comorant Garamond';
+    font-weight: 300;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.heritageFirstText {
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29.88px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.heritageFirstBtn {
+    width: 35%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #c8935f;
+    color: white;
+    font-family: 'Jost';
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.heritageSecondImage {
+    width: 10%;
+}
