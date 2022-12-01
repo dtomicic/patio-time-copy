@@ -1,0 +1,275 @@
+.navigation {
+    background-color: black;
+    width: 100%;
+    position: sticky;
+}
+
+/* Mobile nav */
+
+.navbarPhone {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.navbarPhoneLogo {
+    width: 50%;
+}
+
+.navbarPhoneLogoImage {
+    width: 40%;
+    max-width: 67px;
+}
+
+.navbarPhoneMenu {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hamburgerMenu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.navbarPhoneMenuIcon {
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+
+.navbarOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    max-width: 375px;
+    z-index: 99999;
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.navbarBlack {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    width: 100%;
+    transition:  .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showNav {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbarLine {
+    color: gray;
+    opacity: .2;
+}
+
+.navbarOverlayMenu {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.navbarOverlayMenuList {
+    list-style: none;
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbarOverlaySocials {
+    display: flex;
+    color: white;
+    padding: 0 20px;
+    margin-top: 10px;
+    gap: 15px;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+
+.navbarOverlayContact {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.navbarOverlayContactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Jost', sans-serif;
+}
+
+.navbarOverlayContactItemText {
+    font-size: 14px;
+}
+
+/* End mobile nav */
+
+/* Desktop nav */
+
+.desktopNav {
+    display: none;
+}
+
+/* End desktop nav */
+
+@media screen and (min-width: 1245px) {
+    /* Mobile nav */
+
+    .mobileNav {
+        display: none;
+    }
+
+    /* End mobile nav */
+
+    /* Desktop nav */
+
+    .desktopNav {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+    }
+
+    .navbarTop {
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        font-family: 'Jost';
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0 50px;
+    }
+
+    .desktopNavbarLine {
+        width: 100%;
+        color: gray;
+        opacity: .2;
+        margin: 0 0 20px 0;
+    }
+
+    .navbarTopLeftItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbarTopRight {
+        display: flex;
+        gap: 40px;
+    }
+
+    .navbarTopRightItem {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbarBottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 50px;
+    }
+
+    .navbarBottomLeft {
+        width: 20%;
+    }
+
+    .navbarBottomLeftLogo {
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .navbarBottomCenter {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .navbarBottomCenterList {
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        font-family: 'Jost';
+        font-weight: 400;
+        padding: 0;
+    }
+
+    .navbarBottomCenterListItemLink {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 500;
+        transition: .3s;
+    }
+
+    .navbarBottomCenterListItemLink:hover {
+        color: #c8935f;
+        cursor: pointer;
+    }
+
+    .navbarBottomRight {
+        display: flex;
+        width: 20%;
+        justify-content: flex-end;
+    }
+
+    .navbarBottomRightBtn {
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        font-family: 'Jost';
+        text-transform: uppercase;
+        padding: 10px 30px;
+        font-size: 13px;
+        font-weight: 500;
+        transition: .3s;
+    }
+
+    .navbarBottomRightBtn:hover {
+        background-color: #c8935f;
+        cursor: pointer;
+        border: 2px solid #c8935f;
+    }
+    /* End desktop nav */
+}
+
+@media screen and (min-width: 1500px) {
+    /* Desktop nav */
+    .navbarTop {
+        padding: 0 150px;
+    }
+
+    .navbarBottom {
+        padding: 10px 150px;
+    }
+
+    .navbarBottomCenterListItemLink {
+        font-size: 15px;
+    }
+}
