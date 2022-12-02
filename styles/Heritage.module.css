@@ -1,59 +1,110 @@
 .heritageSection {
-    display: flex;
-    flex-direction: column;
-    background-color: #0e0d0a;
-    color: white;
-    padding: 80px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #0e0d0a;
+  color: white;
+  padding: 80px 20px 50px 20px;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
 .heritageFirst {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .heritageFirstSubHeader {
-    font-family: 'Jost';
-    font-weight: 600;
-    font-size: 14px;
-    color: #c8935f;
-    text-transform: uppercase;
-    margin: 0;
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: 14px;
+  color: #c8935f;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .heritageFirstHeader {
-    font-family: 'Comorant Garamond';
-    font-weight: 300;
-    font-size: 28px;
-    color: white;
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 0;
+  font-family: "Comorant Garamond";
+  font-weight: 300;
+  font-size: 28px;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .heritageFirstText {
-    font-family: 'Jost';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 29.88px;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 0;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29.88px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .heritageFirstBtn {
-    width: 35%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #c8935f;
-    color: white;
-    font-family: 'Jost';
-    font-size: 13px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Jost";
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 20px;
+  width: 31%;
+  max-width: 104px;
+  transition: 0.3s ease-in-out;
+}
+
+.heritageFirstBtn:hover {
+  cursor: pointer;
+}
+
+.heritageFirstBtnText {
+  width: 100%;
+}
+
+.heritageFirstBtnLine {
+  width: 100%;
+  height: 2px;
+  background-color: #c8935f;
 }
 
 .heritageSecondImage {
-    width: 10%;
+  width: 100%;
+}
+
+@media screen and (min-width: 1245px) {
+  .heritageSection {
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: row;
+  }
+
+  .heritageFirst {
+    width: 40%;
+  }
+
+  .heritageFirstHeader {
+    font-size: 56px;
+    letter-spacing: 5.6px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+    .heritageSection {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .heritageFirst {
+        width: 30%;
+    }
 }
