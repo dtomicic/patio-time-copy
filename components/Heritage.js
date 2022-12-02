@@ -16,9 +16,10 @@ const Heritage = () => {
           dining atmosphere, award-winning cuisine and impeccable wines, making
           every meal with us an unforgettable experience.{" "}
         </p>
-        <button className={heritageStyles.heritageFirstBtn}>
-          Discover more
-        </button>
+        <div className={heritageStyles.heritageFirstBtn}>
+          <span className={heritageStyles.heritageFirstBtnText}>Discover more</span>
+          <div className={heritageStyles.heritageFirstBtnLine}></div>
+        </div>
       </div>
       <div className={heritageStyles.heritageSecond}>
         <img src='/images/heritage.jpg' alt='heritage' className={heritageStyles.heritageSecondImage} />
