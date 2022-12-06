@@ -1,3 +1,4 @@
+import Gallery from "../components/Gallery";
 import Header from "../components/Header";
 import Heritage from "../components/Heritage";
 import Navigation from "../components/Navigation";
@@ -9,6 +10,7 @@ export default function Home() {
       <Navigation/>
       <Header />
       <Heritage />
+      <Gallery />
     </div>
   );
 }

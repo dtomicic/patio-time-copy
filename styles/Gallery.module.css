@@ -1,0 +1,140 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.galleryFirst {
+  width: 100%;
+}
+
+.galleryFirstPicture {
+  background-image: url("/images/flavour1.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+}
+
+.gallerySecond {
+  width: 100%;
+}
+
+.gallerySecondCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallerySecondCardPicture {
+  background-size: cover;
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+}
+
+.galleryPicture1 {
+  background-image: url("/images/flavour2.jpg");
+}
+
+.galleryPicture2 {
+  background-image: url("/images/flavour3.jpg");
+}
+
+.galleryPicture3 {
+  background-image: url("/images/flavour4.jpg");
+}
+
+.gallerySecondCardText {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+}
+
+.gallerySecondCardTextHeader {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.gallerySecondCardTextContent {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.56px;
+}
+
+.gallerySecondCardTextBtn {
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 29.88px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  flex-direction: column;
+}
+
+.gallerySecondCardTextBtnLine {
+  height: 2px;
+  background: #c8935f;
+  width: 75%;
+  max-width: 118px;
+}
+
+.gallerySecondCardTextBtn h4 {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .gallerySecondCard {
+    flex-direction: row;
+  }
+
+  .gallerySecondCardPicture {
+    width: 50%;
+  }
+
+  .gallerySecondCardText {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .gallerySecondCardInverted {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .gallery {
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+
+  .galleryFirst {
+    width: 70%;
+  }
+
+  .galleryFirstPicture {
+    height: 120vh;
+  }
+
+  .gallerySecondCardText {
+    padding: 0 30px;
+  }
+
+  .gallerySecondCardTextBtnLine {
+    max-width: unset;
+    width: 100%;
+    max-width: 120px;
+  }
+
+}
