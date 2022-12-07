@@ -1,3 +1,4 @@
+import Menus from "../components/Menus";
 import Gallery from "../components/Gallery";
 import Header from "../components/Header";
 import Heritage from "../components/Heritage";
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <Heritage />
       <Gallery />
+      <Menus />
     </div>
   );
 }
