@@ -82,6 +82,10 @@
   flex-direction: column;
 }
 
+.gallerySecondCardTextBtn:hover {
+  cursor: pointer;
+}
+
 .gallerySecondCardTextBtnLine {
   height: 2px;
   background: #c8935f;
