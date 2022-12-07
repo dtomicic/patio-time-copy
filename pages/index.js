@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Heritage from "../components/Heritage";
 import Navigation from "../components/Navigation";
 import homeStyles from "../styles/Home.module.css";
+import Dining from "../components/Dining";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Heritage />
       <Gallery />
       <Menus />
+      <Dining />
     </div>
   );
 }
